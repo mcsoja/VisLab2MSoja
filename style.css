@@ -47,12 +47,25 @@ body {
   /*   BAR-CHART  */
   /****************/
   
-  .bar {
-    fill: #03d3fc;
+  .bar1 {
+    fill: #4663FF;
   }
+
+/*  .bar2 {
+    fill: #4F85FF;
+  }
+  .bar3 {
+    fill: #59A5FF;
+  }
+  .bar4 {
+    fill: #63C3FF;
+  }
+  .bar5 {
+    fill: #6EDEFF;
+  }*/
   
-  .bar:hover {
-    fill:#15b6d6;
+  .bar1:hover {
+    fill: #6EDEFF;
   }
   
   .axis {
@@ -81,30 +94,30 @@ body {
   }
   
   
-  /****************/
-  /*   TOOLTIPS   */
-  /****************/
-  
-  #tooltip {
-      position: absolute;
-      width: 250px;
-      height: auto;
-      padding: 10px;
-      background-color: white;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      border-radius: 10px;
-      -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-      -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-      pointer-events: none;
-  }
-  #tooltip.hidden {
-      display: none;
-  }
-  #tooltip p {
-      margin: 0;
-      font-family: sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-  }
+/****************/
+/*   TOOLTIPS   */
+/****************/
+
+#tooltip {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+#tooltip.hidden {
+  display: none;
+}
+#tooltip p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}

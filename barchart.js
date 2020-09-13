@@ -75,16 +75,16 @@ function renderBarChart(data) {
   ]);
 
   // ---- DRAW BARS ----
-  let bars = svg
-    .selectAll(".bar")
+  let bar1 = svg
+    .selectAll(".bar1")
     .remove()
     .exit()
     .data(data);
 
-  bars
+  bar1
     .enter()
     .append("rect")
-    .attr("class", "bar")
+    .attr("class", "bar1")
     .attr("x", function(d) {
       return x(d.Location);
     })
@@ -95,7 +95,7 @@ function renderBarChart(data) {
       return height - y(d.Visitors);
     })
     .attr("width", x.bandwidth())
-    .on("mouseover", function(d) {
+    .on("mouseover", function(event, d) {
       //Get this bar's x/y values, then augment for the tooltip
       let xPosition =
         margin.left +
@@ -119,6 +119,7 @@ function renderBarChart(data) {
       //Hide the tooltip
       d3.select("#tooltip").classed("hidden", true);
     });
+
 
   // ---- DRAW AXIS	----
   xAxisGroup = svg
