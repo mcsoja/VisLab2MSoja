@@ -19,6 +19,18 @@ body {
     margin-top: 60px;
     color: navy;
   }
+
+  .containter {
+    border-radius: 30px;
+  }
+
+  .form-control {
+    border-radius: 30px;
+
+  }
+  #chart-area {
+    background-color: lightblue;
+  }
   
   .content {
     text-align: center;
